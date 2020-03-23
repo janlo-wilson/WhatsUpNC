@@ -57,48 +57,118 @@
     
 
     <div class="container">
-        <div class="form-group row">
+        <div class="row row-content">
             <div class="col">
-
-            </div>
-            <div class="col">
-
+                <h3>Contact Us</h3>
+                <p>We'd love to hear from you! You can send questions via email to <a role="link" href="mailto:WhatsUPNC@gmail.com">WhatsUpNC@gmail.com</a>,  
+                <a href="#eventForm">submit an event</a> via the form below or <a href="#feedbackForm">provide feedback</a> via the last form.</p>
             </div>
         </div>
 
-        
-        <div class="form-group row">
-                <label for="date" class="col-2 col-form-label">Event Date</label>
-                    <div class="col-5">
-                        <input class="form-control" type="date" id="date" name="date" placeholder="Date">
-                    </div>
-                <label for="time" class="col-2 col-form-label">Event Time</label>
-                    <div class="col-3">
-                        <input class="form-control" type="time" id="time" name="time" placeholder="Time">
-                    </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="eventURL" class="col-3 col-form-label">Event Website</label>
-                    <div class="col">
-                        <input class="form-control" type="url" id="eventURL" name="eventURL" placeholder="URL">
-                    </div>
-            </div>
-
-            <div class="form-group row">
-                <label for="contactEmail" class="col-3 col-form-label">Your Email</label>
-                    <div class="col">
-                        <input class="form-control" type="email" id="contactEmail" name="contactEmail" placeholder="Email">
-                    </div>
-            </div>
-
-            <div class="form-group row">
-                <div class="col">
-                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="We may contact you for more info!">Submit</button>
+        <div class="card mb-3" id="eventForm">
+            <div class="card-body">
+                <h3 class="card-title">Submit an Event</h3>
+                <div class="form-group row">
+                    <label for="date" class="col-2 col-form-label">Event Date</label>
+                        <div class="col-5">
+                            <input class="form-control" type="date" id="date" name="date" placeholder="Date">
+                        </div>
+                    <label for="time" class="col-2 col-form-label">Event Time</label>
+                        <div class="col-3">
+                            <input class="form-control" type="time" id="time" name="time" placeholder="Time">
+                        </div>
                 </div>
+
+                <div class="form-group row">
+                    <label for="eventURL" class="col-3 col-form-label">Event Website</label>
+                        <div class="col">
+                            <input class="form-control" type="url" id="eventURL" name="eventURL" placeholder="URL">
+                        </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="contactEmail" class="col-3 col-form-label">Your Email</label>
+                        <div class="col">
+                            <input class="form-control" type="email" id="contactEmail" name="contactEmail" placeholder="Email">
+                        </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col">
+                        <button type="submit" class="btn btn-info" data-toggle="tooltip" data-html="true" data-placement="bottom" title="We may contact you for more information!">Submit</button>
+                    </div>
+                </div>
+            </div>
         </div>
         
+        <div class="card mb-3" id="feedbackForm">
+            <div class="card-body">
+                <h3 class="card-title">Give Us Your Feedback</h3>
+                <div class="form-group row">
+                    <label for="firstName" class="col-2 col-form-label">First Name</label>
+                    <div class="col">
+                        <input class="form-control" type="text" id="firstName" placeholder="First Name">
+                    </div>
+                    <label for="lastName" class="col-2 col-form-label">Last Name</label>
+                    <div class="col">
+                        <input class="form-control" type="text" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label for="email" class="col-md-1 col-form-label">Email</label>
+                    <div class="col-md-5">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+                    <div class="col-md-4">
+                        May we contact you?
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                        </div>
+
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                                <label for="contactNo" class="form-check-label">No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-10">
+                        How did you hear about us?
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="friend" name="marketingRadios" value="friend" />
+                                <label for="friend" class="form-check-label">Friend/Family member</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="internet" name="marketingRadios" value="internet" />
+                                <label for="internet" class="form-check-label">Internet search</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="social" name="marketingRadios" value="social" />
+                                <label for="social" class="form-check-label">Social media</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" class="form-check-input" id="other" name="marketingRadios" value="other" />
+                                <label for="other" class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-info">Send Feedback</button>
+                    </div>
+            </div>
+        </div>
                     
     </div>
 

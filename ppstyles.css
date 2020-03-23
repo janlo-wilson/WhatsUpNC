@@ -41,3 +41,8 @@ a {
 .modal-body {
     background-color: lightyellow;
 }
+
+.card-body {
+    background-color: lightyellow;
+    border: 1px solid darkgrey;
+}
