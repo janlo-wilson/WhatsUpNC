@@ -1,0 +1,58 @@
+$color-primary: lightyellow;
+$color-secondary: lightsalmon;
+$color-mid: yellow;
+$color-pale: oldlace;
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: $color-primary;
+}
+
+h1, h2, h3 {
+    font-family: fantasy;
+}
+
+h3 {
+    color: skyblue;
+}
+
+.navbar-dark {
+    background-color: $color-secondary;
+    border: 1px solid white;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-secondary, $color-pale, $color-mid);
+    color: skyblue;
+    text-align: center;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+footer {
+    background-image: linear-gradient(to right, $color-secondary, $color-pale, $color-mid);
+}
+
+a {
+    color: skyblue;
+}
+
+.modal-body {
+    background-color: $color-primary;
+}
+
+#eventForm, #feedbackForm {
+    background-color: $color-primary;
+    border: 1px solid darkgrey;
+}
+
+h4 {
+    background-color: lemonchiffon;
+}
