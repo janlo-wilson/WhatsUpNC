@@ -37,10 +37,10 @@
                             <a class="nav-link dropdown-toggle" href="events.html" id="eventsDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                                 <i class="fa fa-bullhorn fa-lg"></i> Events</a> 
                             <div class="dropdown-menu" aria-labelledby="eventsDrop">
-                                <a class="dropdown-item" href="#">Arts/Theater</a>
-                                <a class="dropdown-item" href="#">Music</a>
-                                <a class="dropdown-item" href="#">Sports</a>
-                                <a class="dropdown-item" href="#">Volunteer</a>
+                                <a class="dropdown-item" href="arts.html">Arts/Theater</a>
+                                <a class="dropdown-item" href="music.html">Music</a>
+                                <a class="dropdown-item" href="sports.html">Sports</a>
+                                <a class="dropdown-item" href="volunteer.html">Volunteer</a>
                             </div>
                         </li>
                         <li class="nav-item active"> <a class="nav-link" href="#"> <i class="fa fa-calendar fa-lg"></i> Calendar</a> </li>
@@ -94,23 +94,7 @@
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
      <script src="node_modules/moment/min/moment-with-locales.min.js"></script>
      <script src="calendar.js"></script>
-     <script>
-         $(function() {
-             $('[data-toggle="tooltip"]').tooltip()
-         })
+     <script src="scripts.js"></script>
 
-         let calendar = new CalendarYvv ("#calendar", moment().format("Y-M-D"), "Monday");
-         calendar.createCalendar();
-         calendar.diasResal = [1,2,3];
-         calendar.colorResal = "#28a7454d";
-         calendar.textResalt = "#28a745";
-         calendar.bg = "bg-dark";
-         calendar.textColor = "text-white";
-         calendar.btnH = "btn-outline-light";
-         calendar.btnD = "btn-rounded-success";
-         calendar.funcPer = function(ev){
-             console.log(ev)
-         };
-     </script>
 </body>
 </html>
