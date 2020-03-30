@@ -3,8 +3,8 @@ body {
     background-color: lightyellow;
 }
 
-h1, h2, h3 {
-    font-family: fantasy;
+h2, h3 {
+    font-family: "Shadows Into Light Two", cursive;
 }
 
 h3 {
@@ -49,4 +49,14 @@ a {
 
 h4 {
     background-color: lemonchiffon;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+#artsImage {
+    height: 300px;
+    width: 225px;
 }
