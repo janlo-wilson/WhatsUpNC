@@ -3,16 +3,12 @@ body {
     background-color: lightyellow;
 }
 
-h2, h3 {
+h2, h3, h5 {
     font-family: "Shadows Into Light Two", cursive;
 }
 
-h3 {
-    color: skyblue;
-}
-
 .navbar-dark {
-    background-color: lightsalmon;
+    background-color: rgb(252, 182, 155);
     border: 1px solid white;
 }
 
@@ -20,7 +16,6 @@ h3 {
     margin: 0;
     padding: 30px;
     background-image: linear-gradient(to right, lightsalmon, oldlace, yellow);
-    color: skyblue;
     text-align: center;
 }
 
@@ -47,10 +42,6 @@ a {
     border: 1px solid darkgrey;
 }
 
-h4 {
-    background-color: lemonchiffon;
-}
-
 img {
     height: 300px;
     width: 300px;
@@ -59,4 +50,13 @@ img {
 #artsImage {
     height: 300px;
     width: 225px;
+}
+
+#popularEvent {
+    background-color: lightyellow;
+    border: 1px solid darkgrey;
+}
+
+#popularTitle {
+    color: skyblue;
 }
