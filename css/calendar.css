@@ -322,7 +322,7 @@ span.fc-button {
 
 .fc-state-down,
 .fc-state-active {
-  background-color: #ff3b30;
+  background-color: lightsalmon;
   background-image: none;
   outline: 0;
   color: #ffffff;

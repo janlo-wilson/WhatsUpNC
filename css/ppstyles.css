@@ -15,8 +15,13 @@ h2, h3, h5 {
 .jumbotron {
     margin: 0;
     padding: 30px;
-    background-image: linear-gradient(to right, lightsalmon, oldlace, yellow);
+    background-image: linear-gradient(to right, lightsalmon, oldlace, yellow); 
     text-align: center;
+    /*background-image: url("Beautiful_Ocean.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
 .row-content {
@@ -54,9 +59,20 @@ img {
 
 #popularEvent {
     background-color: lightyellow;
-    border: 1px solid darkgrey;
+    border: 2px solid darkgrey;
 }
 
 #popularTitle {
     color: skyblue;
+}
+
+.dropdown-menu {
+    background-color: lightyellow;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-item a:hover {
+    background-color: rgb(24, 176, 236);
 }
