@@ -49,7 +49,7 @@ body {
 #calendar {
   /* 		float: right; */
   margin: 0 auto;
-  width: 900px;
+  width: 768px;
   background-color: #FFFFFF;
   border-radius: 6px;
   box-shadow: 0 1px 2px #C3C3C3;
@@ -229,7 +229,7 @@ span.fc-button {
 }
 
 .fc-state-highlight > div > div.fc-day-number {
-  background-color: #ff3b30;
+  background-color: rgb(252, 166, 133);
   color: #ffffff;
   border-radius: 50%;
   margin: 4px;
@@ -311,7 +311,7 @@ span.fc-button {
 }
 
 .fc-state-hover {
-  color: #ff3b30;
+  color: rgb(252, 166, 133);
   text-decoration: none;
   background-position: 0 -15px;
   -webkit-transition: background-position 0.1s linear;
@@ -336,7 +336,7 @@ span.fc-button {
   filter: alpha(opacity=65);
   box-shadow: none;
   border: 1px solid #ffe3e3;
-  color: #ff3b30;
+  color: rgb(252, 166, 133);
 }
 
 /* Global Event Styles
@@ -362,7 +362,7 @@ span.fc-button {
   background-color: #f3dcf8;
 }
 .fc-event.info {
-  background-color: #c6ebfe;
+  background-color: skyblue;
 }
 .fc-event.important {
   background-color: #ffbebe;
@@ -721,7 +721,7 @@ table.fc-header {
   transition: background-color 0.2s;
 }
 .fc-week .fc-day.fc-state-highlight:hover .fc-day-number {
-  background-color: #ff3b30;
+  background-color: rgb(192, 99, 63);
 }
 .fc-button-today {
   border: 1px solid rgba(255, 255, 255, 0);

@@ -24,7 +24,9 @@ $(this).draggable({
           center: 'agendaDay,agendaWeek,month',
           right: 'prev,next today'
         },
-        editable: true,
+		editable: true,
+		rerenderDelay: 0,
+		windowResizeDelay: 0,
 		firstDay: 0,
 		selectable: true,
         defaultView: 'month',
@@ -41,8 +43,8 @@ $(this).draggable({
 			day: 'MMMM yyyy'
 		  },
 		  allDaySlot: false,
-        selectHelper: true,
-        select: function(start, end, allDay) {
+		selectHelper: true,
+        /*select: function(start, end, allDay) {
           var title = prompt('Event Title:');
           if (title) {
             calendar.fullCalendar('renderEvent', {
@@ -56,7 +58,7 @@ $(this).draggable({
           }
           calendar.fullCalendar('unselect');
 		},
-		droppable: true,
+		droppable: false,
 		drop: function(date, allDay) {
 			var originalEventObject = $(this).data('eventObject');
 			var copiedEventObject = $.extend({}, originalEventObject);
@@ -67,51 +69,70 @@ $(this).draggable({
  	if ($('#drop-remove').is(':checked')) {
 		$(this).remove();
 	}
-  },
+  },*/
   events: [{
-	  title: 'All Day Event',
-	  start: new Date(y, m, 1)
-	},
-	{
-	  id: 999,
-	  title: 'Repeating Event',
-	  start: new Date(y, m, d - 3, 16, 0),
+	  title: 'Art in the Village',
+	  start: new Date(2020, 5, 28, 9),
 	  allDay: false,
+	  url: "arts.html",
 	  className: 'info'
 	},
 	{
-	  id: 999,
-	  title: 'Repeating Event',
-	  start: new Date(y, m, d + 4, 16, 0),
+		title: "The Go Go's",
+		start: new Date(2020, 5, 28, 19, 30),
+		allDay: false,
+		url: "music.html",
+		className: 'info'
+	  },
+	{
+	  title: 'Meading in the Garden',
+	  start: new Date(2020, 7, 01, 12),
 	  allDay: false,
+	  url: "arts.html",
 	  className: 'info'
 	},
 	{
-	  title: 'Meeting',
-	  start: new Date(y, m, d, 10, 30),
+	  title: 'FreeMartin Concert',
+	  start: new Date(2020, 4, 29, 19),
 	  allDay: false,
-	  className: 'important'
+	  url: "music.html",
+	  className: 'info'
 	},
 	{
-	  title: 'Lunch',
-	  start: new Date(y, m, d, 12, 0),
-	  end: new Date(y, m, d, 14, 0),
+	  title: 'Best of Broadway',
+	  start: new Date(2020, 6, 18, 19, 30),
 	  allDay: false,
-	  className: 'important'
+	  url: "music.html",
+	  className: 'info'
 	},
 	{
-	  title: 'Birthday Party',
-	  start: new Date(y, m, d + 1, 19, 0),
-	  end: new Date(y, m, d + 1, 22, 30),
+		title: 'Opening Day at the Racetrack',
+		start: new Date(2020, 6, 18, 11, 30),
+		allDay: false,
+		url: "sports.html",
+		className: 'info'
+	  },
+	{
+	  title: 'San Diego Loyal',
+	  start: new Date(2020, 6, 03, 19),
 	  allDay: false,
+	  url: "sports.html",
+	  className: 'info'
 	},
 	{
-	  title: 'Click for Google',
-	  start: new Date(y, m, 28),
-	  end: new Date(y, m, 29),
-	  url: 'https://ccp.cloudaccess.net/aff.php?aff=5188',
-	  className: 'success'
-	}
+	  title: 'Creek to Bay Cleanup',
+	  start: new Date(2020, 5, 20, 9),
+	  allDay: false,
+	  url: "volunteer.html",
+	  className: 'info'
+	},
+	{
+		title: 'Vista Strawberry Festival',
+		start: new Date(2020, 8, 6, 8),
+		allDay: false,
+		url: "volunteer.html",
+		className: 'info'
+	  },
   ],
 });
 });
@@ -134,7 +155,7 @@ $(this).draggable({
 	
 		// display
 		defaultView: 'month',
-		aspectRatio: 1.35,
+		aspectRatio: 1.77,
 		header: {
 			left: 'title',
 			center: '',
