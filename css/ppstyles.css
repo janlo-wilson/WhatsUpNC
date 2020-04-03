@@ -13,8 +13,7 @@ h2, h3, h5 {
 
 .jumbotron {
     margin: 0;
-    padding: 30px;
-    /*background-image: linear-gradient(to right, lightsalmon, oldlace, yellow);*/ 
+    padding: 30px; 
     text-align: center;
     background-image: url("../img/Beach_Sunset.png");
     background-attachment: fixed;
@@ -22,6 +21,7 @@ h2, h3, h5 {
     background-repeat: no-repeat;
     background-size: 350% 275%;
     color: white;
+    /*background-image: linear-gradient(to right, rgb(252, 166, 133), rgb(243, 236, 223), rgb(252, 252, 85));*/
 }
 
 .row-content {
@@ -71,8 +71,4 @@ img {
     position: relative;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-item a:hover {
-    background-color: rgb(24, 176, 236);
 }

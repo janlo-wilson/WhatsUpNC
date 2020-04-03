@@ -155,7 +155,7 @@ $(this).draggable({
 	
 		// display
 		defaultView: 'month',
-		aspectRatio: 1.77,
+		aspectRatio: 1.5,
 		header: {
 			left: 'title',
 			center: '',

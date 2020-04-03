@@ -1,33 +1,38 @@
 $color-primary: lightyellow;
-$color-secondary: lightsalmon;
-$color-mid: yellow;
-$color-pale: oldlace;
+$color-border: darkgrey;
+$color-navbar: rgb(221, 161, 137);
+$color-bground-one: rgb(252, 166, 133);
+$color-bground-two: rgb(243, 236, 223);
+$color-bground-three: rgb(252, 252, 85);
+$color-blue: rgb(15, 161, 219);
+$font-primary: Arial, Helvetica, sans-serif;
+$font-secondary: "Shadows Into Light Two", cursive;
 
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: $font-primary;
     background-color: $color-primary;
 }
 
-h1, h2, h3 {
-    font-family: fantasy;
-}
-
-h3 {
-    color: skyblue;
+h2, h3, h5 {
+    font-family: $font-secondary;
 }
 
 .navbar-dark {
-    background-color: $color-secondary;
-    border: 1px solid white;
+    background-color: $color-navbar;
 }
 
 .jumbotron {
     margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, $color-secondary, $color-pale, $color-mid);
-    color: skyblue;
+    padding: 30px; 
     text-align: center;
+    background-image: url("../img/Beach_Sunset.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350% 275%;
+    color: white;
+    /*background-image: linear-gradient(to right, $color-bground-one, $color-bground-two, $color-bground-three);*/
 }
 
 .row-content {
@@ -37,11 +42,11 @@ h3 {
 }
 
 footer {
-    background-image: linear-gradient(to right, $color-secondary, $color-pale, $color-mid);
+    background-image: linear-gradient(to right, $color-bground-one, $color-bground-two, $color-bground-three));
 }
 
 a {
-    color: skyblue;
+    color: $color-blue;
 }
 
 .modal-body {
@@ -50,9 +55,31 @@ a {
 
 #eventForm, #feedbackForm {
     background-color: $color-primary;
-    border: 1px solid darkgrey;
+    border: 1px solid $color-border;
 }
 
-h4 {
-    background-color: lemonchiffon;
+img {
+    height: 300px;
+    width: 300px;
+}
+
+#artsImage {
+    height: 300px;
+    width: 225px;
+}
+
+#popularEvent {
+    background-color: $color-primary;
+    border: 2px solid $color-border;
+}
+
+#popularTitle {
+    color: $color-blue;
+}
+
+.dropdown-menu {
+    background-color: $color-primary;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
